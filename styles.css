@@ -1,0 +1,70 @@
+/* Dégradé en arrière-plan */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(to right, 
+        #7936B7 0%, #A22895 26%, 
+        #F58577 54%, #F73E9C 71%, 
+        #9BCBE1 100%);
+    color: white;
+}
+
+/* En-tête */
+header {
+    background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    padding: 50px 20px;
+    border-bottom: 4px solid #F73E9C;
+}
+
+/* Bouton */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #F73E9C;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #A22895;
+}
+
+/* Section Fonctionnalités */
+#features {
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
+
+.feature {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* Section À propos */
+#about {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 50px 20px;
+    border-radius: 15px;
+}
+
+/* Liens */
+a {
+    color: #9BCBE1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #F73E9C;
+}
