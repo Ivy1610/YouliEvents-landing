@@ -68,3 +68,28 @@ a {
 a:hover {
     color: #F73E9C;
 }
+
+/* Médias dans les fonctionnalités */
+.feature video,
+.feature img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover; /* Garde le bon ratio sans déformation */
+}
+
+/* Section Présentation */
+#presentation {
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    margin: 20px;
+}
+
+#presentation video {
+    width: 80%;
+    max-height: 400px; /* Ajuste selon besoin */
+    border-radius: 10px;
+}
