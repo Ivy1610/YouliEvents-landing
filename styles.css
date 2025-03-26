@@ -4,16 +4,17 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background: linear-gradient(to right, 
-        #7936B7 0%, #A22895 26%, 
-        #F58577 54%, #F73E9C 71%, 
-        #9BCBE1 100%);
+    background: linear-gradient(to right,
+            #7936B7 0%, #A22895 26%,
+            #F58577 54%, #F73E9C 71%,
+            #9BCBE1 100%);
     color: white;
 }
 
 /* En-tête */
 header {
-    background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    background: rgba(0, 0, 0, 0.6);
+    /* Fond semi-transparent */
     padding: 50px 20px;
     border-bottom: 4px solid #F73E9C;
 }
@@ -37,18 +38,22 @@ header {
 
 /* Section Fonctionnalités */
 #features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     padding: 50px 20px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 15px;
 }
 
 .feature {
-    display: inline-block;
-    width: 30%;
+    flex: 1 1 300px;
+    max-width: 350px;
     padding: 20px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    margin: 10px;
+    text-align: center;
 }
 
 /* Section À propos */
@@ -73,9 +78,10 @@ a:hover {
 .feature video,
 .feature img {
     width: 100%;
-    height: auto;
+    height: 200px;
     border-radius: 10px;
-    object-fit: cover; /* Garde le bon ratio sans déformation */
+    object-fit: cover;
+    /* Garde le bon ratio sans déformation */
 }
 
 /* Section Présentation */
@@ -90,6 +96,24 @@ a:hover {
 
 #presentation video {
     width: 80%;
-    max-height: 400px; /* Ajuste selon besoin */
+    max-height: 400px;
+    /* Ajuste selon besoin */
     border-radius: 10px;
+}
+
+/* 📱 Version mobile */
+@media (max-width: 768px) {
+    .feature {
+        flex: 1 1 100%; /* Prend toute la largeur */
+        max-width: none;
+    }
+
+    .feature video,
+    .feature img {
+        height: auto; /* Taille flexible pour mobile */
+    }
+
+    #presentation video {
+        max-height: 300px; /* Moins haut sur mobile */
+    }
 }
